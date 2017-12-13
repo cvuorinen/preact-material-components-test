@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import Button from 'preact-material-components/Button';
+import Button from 'preact-material-components/Button/Button';
 import 'preact-material-components/Button/style.css';
 import * as style from './style.css';
 
@@ -49,7 +49,7 @@ export default class Profile extends Component<Props, State> {
 				<div>Current time: {new Date(time).toLocaleString()}</div>
 
 				<p>
-					<Button raised primary ripple onClick={this.increment}>Click Me</Button>
+					<Button raised onClick={this.increment}>Click Me</Button>
 					{' '}
 					Clicked {count} times.
 				</p>
