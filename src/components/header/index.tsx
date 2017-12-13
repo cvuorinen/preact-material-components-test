@@ -12,7 +12,12 @@ import 'preact-material-components/List/style.css';
 import 'preact-material-components/Toolbar/style.css';
 // import style from './style';
 
-export default class Header extends Component {
+interface State {
+	darkThemeEnabled: any;
+}
+export default class Header extends Component<{}, State> {
+	dialog: any;
+	drawer: any;
 	closeDrawer() {
 		this.drawer.MDComponent.open = false;
 		this.state = {
