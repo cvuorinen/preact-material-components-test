@@ -94,7 +94,7 @@ export default class Header extends Component<{}, State> {
 						</div>
 					</Dialog.Body>
 					<Dialog.Footer>
-						<Dialog.FooterButton accept>okay</Dialog.FooterButton>
+						<Dialog.FooterButton>okay</Dialog.FooterButton>
 					</Dialog.Footer>
 				</Dialog>
 			</div>
